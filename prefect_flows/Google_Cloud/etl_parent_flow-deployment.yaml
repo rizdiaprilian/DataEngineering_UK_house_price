@@ -1,0 +1,69 @@
+###
+### A complete description of a Prefect Deployment for flow 'etl-parent-flow'
+###
+name: Parameterized ETL
+description: null
+version: d00dccad327eefc89d9f346b14307a74
+# The work queue that will handle this deployment's runs
+work_queue_name: default_3
+work_pool_name: default-agent-pool
+tags: []
+parameters:
+  color: yellow
+  months:
+  - 1
+  - 2
+  - 3
+  year: 2022
+schedule: null
+is_schedule_active: true
+infra_overrides: {}
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: etl-parent-flow
+manifest_path: null
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  _block_document_id: 18ce7512-e744-43f4-966f-8cfc4ccc9bc9
+  _block_document_name: anonymous-fe6872f3-ebab-446c-88b4-408aecf53f2e
+  _is_anonymous: true
+  block_type_slug: process
+  _block_type_slug: process
+storage: null
+path: /home/rizdi.aprilian/data-engineering-zoomcamp/week_7_project_UK_house_price/prefect_flows/Google_Cloud
+entrypoint: parameterized_flow.py:etl_parent_flow
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties:
+    months:
+      title: months
+      default:
+      - 1
+      - 2
+      - 3
+      position: 0
+      type: array
+      items:
+        type: integer
+    year:
+      title: year
+      default: 2022
+      position: 1
+      type: integer
+    color:
+      title: color
+      default: yellow
+      position: 2
+      type: string
+  required: null
+  definitions: null
+timestamp: '2023-04-18T10:00:17.101657+00:00'
