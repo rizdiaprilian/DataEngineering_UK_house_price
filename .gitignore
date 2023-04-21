@@ -1,0 +1,8 @@
+prefect_flows/__pycache__/
+prefect_flows/local
+prefect_flows/Google_Cloud/__pycache__/
+flows/
+terraform/.terraform/
+terraform/.terraform.lock.hcl
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
