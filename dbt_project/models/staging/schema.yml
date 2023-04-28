@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: staging
+    database: data-eng-camp-apr22    
+    schema: UK_house_price_all
+
+    tables:
+      - name: 'cash-mortgage-sales'
+      - name: 'first-time-buyer-former-owner-occupied'
+      - name: 'sales'
+      - name: 'average_price'
