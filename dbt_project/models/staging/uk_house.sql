@@ -5,6 +5,7 @@ select
 cast(Date as timestamp) as dates,
 
 -- identifier
+{{ dbt_utls.surrogate_key(['region_name','area_code']) }} as region_id,
 cast(region_name as string) as region_name,
 cast(area_code as string) as area_code,
 
