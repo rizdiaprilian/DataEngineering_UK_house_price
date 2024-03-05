@@ -4,6 +4,8 @@ locals {
 
 variable "project" {
   description = "Your GCP Project ID"
+  default = "data-eng-camp-apr22"
+  type = string
 }
 
 variable "region" {
@@ -14,7 +16,7 @@ variable "region" {
 
 variable "bucket_name" {
   description = "The name of the GCS bucket. Must be globally unique."
-  default = ""
+  default = "bucket_DE_2024"
   type = string
 }
 
@@ -26,7 +28,7 @@ variable "storage_class" {
 variable "BQ_DATASET" {
   description = "BigQuery Dataset that raw data (from GCS) will be written to"
   type = string
-  default = "UK_house_price_all"
+  default = "Mage_data_engineer"
   # type = list
   # default = ["UK_house_price_staging", "UK_house_price_development", "UK_house_price_production"]
 }
