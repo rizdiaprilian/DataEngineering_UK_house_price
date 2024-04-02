@@ -13,6 +13,7 @@ sources:
       - name: green_trip_april_2020
 
       - name: green_trip_may_2020
+      - name: green_trip_june_2020
 
 models:
     - name: stg_green_trip_january_2020
