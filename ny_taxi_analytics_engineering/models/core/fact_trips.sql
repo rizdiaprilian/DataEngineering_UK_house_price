@@ -7,19 +7,7 @@
 with green_tripdata as (
     select *, 
         'Green' as service_type
-    from {{ ref('stg_green_trip_january_2020') }}
-    union all
-    select *, 
-        'Green' as service_type
-    from {{ ref('stg_green_trip_february_2020') }}
-    union all
-    select *, 
-        'Green' as service_type
-    from {{ ref('stg_green_trip_march_2020') }}
-    union all
-    select *, 
-        'Green' as service_type
-    from {{ ref('stg_green_trip_april_2020') }}
+    from {{ ref('stg_green_trip_2020') }}
 ), 
 trips_unioned as (
     select * from green_tripdata
